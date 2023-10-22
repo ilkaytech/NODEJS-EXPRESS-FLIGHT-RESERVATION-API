@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-flight-reservation-api",
+  "version": "1.0.0",
+  "description": "Flight Reservation-API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "debug": "DEBUG=* nodemon"
+  },
+  "keywords": [],
+  "author": "ilkaytech",
+  "license": "ISC License",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.3",
+    "morgan": "^1.10.0",
+    "redoc-express": "^2.1.0",
+    "swagger-autogen": "^2.23.6",
+    "swagger-ui-express": "^5.0.0"
+  }
+}
