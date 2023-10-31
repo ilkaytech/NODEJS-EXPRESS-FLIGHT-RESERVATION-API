@@ -40,3 +40,31 @@ app.use(require("./src/middlewares/findSearchSortPage"));
 
 /* -------------------------------------------------------*/
 // Routes:
+
+// HomePath:
+app.all("/", (req, res) => {
+  res.send({
+    error: false,
+    message: "Welcome to FLIGHT RESERVATION API",
+    documents: "/documents",
+    user: req.user,
+  });
+});
+
+// auth:
+app.use("/auth", require("./src/routes/auth"));
+
+// document:
+app.use("/documents", require("./src/routes/document"));
+
+/* -------------------------------------------------------*/
+
+// errorHandler:
+app.use(require("./src/middlewares/errorHandler"));
+
+// RUN SERVER:
+app.listen(PORT, () => console.log("http://127.0.0.1:" + PORT));
+
+/* -------------------------------------------------------*/
+// Syncronization (must be in commentLine):
+// require('./src/helpers/sync')()
