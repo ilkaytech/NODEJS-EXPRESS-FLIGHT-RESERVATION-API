@@ -9,22 +9,22 @@ const router = require("express").Router();
 // URL: /
 
 // auth:
-router.use("/auth", require("./src/routes/auth"));
+router.use("/auth", require("./auth"));
 
 // user:
-router.use("/users", require("./src/routes/user"));
+router.use("/users", require("./user"));
 
 // flight:
-router.use("/flights", require("./src/routes/flight"));
+router.use("/flights", require("./flight"));
 
 // pessenger:
-router.use("/pessengers", require("./src/routes/pessenger"));
+router.use("/pessengers", require("./pessenger"));
 
 // reservation:
-router.use("/reservations", require("./src/routes/reservation"));
+router.use("/reservations", require("./reservation"));
 
 // document:
-router.use("/documents", require("./src/routes/document"));
+router.use("/documents", require("./document"));
 
 /* ------------------------------------------------------- */
 module.exports = router;
