@@ -57,6 +57,12 @@ app.use("/auth", require("./src/routes/auth"));
 // user:
 app.use("/users", require("./src/routes/user"));
 
+// flight:
+app.use("/flights", require("./src/routes/flight"));
+
+// pessenger:
+app.use("/pessengers", require("./src/routes/pessenger"));
+
 // document:
 app.use("/documents", require("./src/routes/document"));
 
