@@ -63,6 +63,9 @@ app.use("/flights", require("./src/routes/flight"));
 // pessenger:
 app.use("/pessengers", require("./src/routes/pessenger"));
 
+// reservation:
+app.use("/reservations", require("./src/routes/reservation"));
+
 // document:
 app.use("/documents", require("./src/routes/document"));
 
