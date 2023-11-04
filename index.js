@@ -51,23 +51,25 @@ app.all("/", (req, res) => {
   });
 });
 
-// auth:
-app.use("/auth", require("./src/routes/auth"));
+app.use("/", require("./src/routes"));
 
-// user:
-app.use("/users", require("./src/routes/user"));
+// // auth:
+// app.use("/auth", require("./src/routes/auth"));
 
-// flight:
-app.use("/flights", require("./src/routes/flight"));
+// // user:
+// app.use("/users", require("./src/routes/user"));
 
-// pessenger:
-app.use("/pessengers", require("./src/routes/pessenger"));
+// // flight:
+// app.use("/flights", require("./src/routes/flight"));
 
-// reservation:
-app.use("/reservations", require("./src/routes/reservation"));
+// // pessenger:
+// app.use("/pessengers", require("./src/routes/pessenger"));
 
-// document:
-app.use("/documents", require("./src/routes/document"));
+// // reservation:
+// app.use("/reservations", require("./src/routes/reservation"));
+
+// // document:
+// app.use("/documents", require("./src/routes/document"));
 
 /* -------------------------------------------------------*/
 
