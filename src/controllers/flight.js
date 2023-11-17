@@ -1,7 +1,3 @@
-"use strict";
-/* ----------------------------------------
-    NODEJS EXPRESS | FLİGHT RESERVATİON API
-------------------------------------------- */
 // Flight Controller:
 
 const Flight = require("../models/flight");
@@ -37,8 +33,7 @@ module.exports = {
             #swagger.parameters['body'] = {
                 in: 'body',
                 required: true,
-                schema: {
-                }
+                schema: { $ref: '#/definitions/Flight' }
             }
         */
 
@@ -73,8 +68,7 @@ module.exports = {
             #swagger.parameters['body'] = {
                 in: 'body',
                 required: true,
-                schema: {
-                }
+                schema: { $ref: '#/definitions/Flight' }
             }
         */
 
